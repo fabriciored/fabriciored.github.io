@@ -1,0 +1,125 @@
+html {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  border: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, p, span, a, li {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.purple-h1{
+  color: #5b3d9a;
+  text-align: center;
+  border-bottom: 5px solid #ef1b24;
+  font-size: 25px;
+}
+
+header {
+  margin: 0 25vw 0 25vw;
+  border: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured {
+  height: 62vh;
+  background-image: url(./assets/Banner_.png);
+  background-repeat: repeat-x;
+  background-size: 100vw 62vh ;
+}
+
+.featured section {
+  margin: 0 25vw 0 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured section article {
+  color: #f8fcfb;
+}
+.featured section article h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.featured section article ul {
+  padding-left: 1rem;
+}
+.featured section article li {
+  margin: 5px;
+  font-weight: 300;
+}
+
+.featured section div {
+  height: 32.5rem;
+  margin: 1.2rem 0rem 0 1.2rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.featured section form {
+  margin: 0 1vw 0 1vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+}
+.featured section form h3, p {
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.featured section form button {
+  height: 1.8rem;
+  margin: 15px 3.2rem 5px 3.2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+
+  background-color: #5b3d9a;
+  color: white;
+}
+.about-company {
+  background-color: #eeeeee;
+}
+.about-company div{
+  display: flex;
+  margin: 0 25vw 0 25vw
+  
+}
+.about-company aside {
+  margin-top: 2rem;
+  width: 27vw;
+}
+.about-company p {
+  width: 27vw;
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 30px;
+}
+.about-company img {
+  width: 26.5vw;
+  height: 24vw;
+}
+.about-company img, aside{
+  transform: translateX(-3rem);
+}
+.about-services article {
+  margin: 0 25vw 0 25vw
+}
+.about-services article div {
+  display: flex;
+}
+.about-services article div p {
+  text-align: justify;
+}
