@@ -15,11 +15,17 @@ h1, h2, h3, h4, h5, p, span, a, li {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.purple-h1{
+.purple-h1 {
   color: #5b3d9a;
   text-align: center;
   border-bottom: 5px solid #ef1b24;
-  font-size: 25px;
+  font-size: 30px;
+}
+.purple-h2 {
+  color: #5b3d9a;
+  border-bottom: 5px solid #ef1b24;
+  font-size: 23px;
+  width: max-content;
 }
 
 header {
@@ -64,7 +70,7 @@ header {
   height: 32.5rem;
   margin: 1.2rem 0rem 0 1.2rem;
   border-radius: 10px;
-  background-color: white;
+  background-color: #f8fcfb;
 }
 
 .featured section form {
@@ -120,6 +126,41 @@ header {
 .about-services article div {
   display: flex;
 }
-.about-services article div p {
+.about-services article div img {
+  width: 50%;
+  height: 50%;
+  transform: translateY(-35px);
+}
+.about-services article div p, .about-services article p {
   text-align: justify;
+  align-self: flex-start !important;
+  line-height: 35px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 25vw 0 25vw;
+  height: 21vh;
+
+  border-radius: 10px;
+
+  background-color: #eeeeee;
+}
+.benefits h2, .benefits ul {
+  margin: 10px;
+}
+
+.benefits button {
+  padding: 10px;
+  width: 50rem;
+
+  align-self: center;
+
+  background-color: #5b3d9a;
+  color: #f8fcfb;
+  border-radius: 5px;
+
+  font-weight: 600;
+  font-size: 15px;
 }
