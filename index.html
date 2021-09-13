@@ -4,139 +4,223 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <title>Seal Network</title>
-  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Franquias</title>
 </head>
-<body>
-  <header>
-    <img src="./assets/seal.png" alt="">
-    <img src="./assets/seal net.png" alt="">
-  </header>
-  <main></main>
-  <section class="featured">
-    <section>
+<body style="margin: 0;">
 
-      <article>
-        <h1>SEAL NETWORKS:</h1>
-        <h1>SOLUÇÕES IDEAIS PARA</h1>
-        <h1>REDES CORPORATIVAS</h1>
+  <style>
 
-        <ul>
-          <li>Soluções personalizadas de acordo com o porte e modelo de cada negócio</li>
-          <li>Serviços de rede que porporcionam alta disponibilidade, flexibilidade e escalabilidade</li>
-          <li>Estratégia de Costumer Insights em tempo real</li>
-          <li>Inteligencia Artificial e Machine Learning otimizando resultados para redes inteligentes</li>
-          <li>Suporte disponível 24h</li>
-        </ul>
+    :root {
+      --global-margin: 0 20rem 0 20rem
+    }
 
-      </article>
-      <div>
-        <form action="">
-          <h3>Receba uma avaliação do seu cenário atual de rede por quem entende do assunto:</h1>
-            <p>Preencha os campos abaixo para entrar em contato com um dos nossos especialistas</p>
-            <span>Nome*</span>
-            <input type="text">
-            <span>Telefone*</span>
-            <input type="text">
-            <span>Email*</span>
-            <input type="text">
-            <span>Empresa*</span>
-            <input type="text">
-            <span>Qual o segmento da empresa?</span>
-            <input type="search" name="" id="">
-            <span>Cargo*</span>
-            <input type="text">
-            <span>5 + 1 = ?</span>
-            <input type="text">
-            <button type="submit">Quero saber mais!</button>
-        </form>
-      </div>
-    </section>
-  </section>
+    h1, h2, h3, p, span, button {
+      color: white;
+      font-family: Barlow;
+      font-style: normal;
+    }
 
-  <section class="about-company">
-    <div>
-    <img src="./assets/bigdata.png" alt="">
-    <aside>
-      <p>
-      Nosso objetivo é facilitar para você tudo o que for relacionado a redes corporativas, desenvolvendo estratégias assertivas que prezem pela proteção do investimento, pela flexibilidade que seu negócio precisa e pela segurança dos seus dados. 
-      </p>
-      <p>
-      Infundir as tendências de mercado, como Machine Learning, Inteligência Articial e Big Data, otimizando o tempo para implantação e custo operacional. 
-    </p>
-  </aside>
-  </div>
-  </section>
+    button {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
 
-  <section class="about-services">
-    <article>
-      <h1 class="purple-h1">POR QUE REDES INTELIGENTES?</h1>
-      <div>
-        <img src="./assets/smart_net.png" alt="">
-        <p>Hoje o desafio das empresas no quesito rede está relacionado a quantidade de dispositivos que estão conectados, vários dispositivos estão entrando na rede de uma forma desafiadora para quem comanda a infraestrutura. Antigamente apenas coletores, notebooks e impressoras estavam conectados na rede, hoje existem até cafeteiras e outros dispositivos que estão debaixo do mesmo Wifi. O desafio nesse cenário é: Como gerenciar e manter segura a rede sem impactar no desempenho e eficiência?</p>
-      </div>
-      <p>Projetado para otimizar todos os aspectos de sua rede, desde a implantação até a manutenção, novos formatos de redes foram desenvolvidos com o elemento humano em mente, ajudando a TI e os negócios a se concentrarem no que é realmente importante para eles. </p>
-    </article>
-  </section>
+    .featured {
+      padding: 26rem 0 26rem 0rem;
+      height: 120%;
+      background-image: url(./assets/featured-banner.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .featured div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: var(--global-margin);
+      width: 45rem;
+    }
+    .featured div h1 {
+      font-size: 62px;
+    }
 
-  <section class="benefits">
-      <h2 class="purple-h2">OS PRINCIPAIS BENEFÍCIOS INCLUEM:</h2>
-      <ul>
-        <li>CLIENTE, DISPOSITIVO E REDE 360º</li>
-        <li>GESTÃO DE POLÍTICA UNIFICADA</li>
-        <li>KPIS DE SAÚDE DA REDE</li>
-      </ul>
-      <button disabled="disabled">SUA REDE. SEU JEITO. FLEXIBILIDADE DE SOLUÇÃO COMPLETA.</button>
-  </section>
+    .features {
+      padding: auto;
+      margin: var(--global-margin);
 
-  <section class="services">
-    <h1 class="purple-h1">CONHEÇA ALGUNS DOS NOSSOS SERVIÇOS:</h1>
-    <div class="item-grid">
-      <article>
-        <img src="./assets/cloud-computing.png" alt="">
-        <h3 class="purple-h3">REDES INTELIGENTES</h3>
-        <p>Infraestrutura clara e adaptável ao seu negócio, gerenciamento em nuvem e suporte para atender suas necessidades. </p>
-      </article>
-      <article>
-        <img src="./assets/internet-security.png" alt="">
-        <h3 class="purple-h3">SEGURANÇA DIGITAL E LGPD </h3>
-        <p>Proteção automática contra ataques cibernéticos, segurança avançada e apoio jurídico.  </p>
-      </article>
-      <article>
-        <img src="./assets/engagement.png" alt="">
-        <h3 class="purple-h3">ENGAJAMENTO DE CLIENTES</h3>
-        <p>Registro e cruzamento de dados dos usuários, que te possibilitam viabilizar ofertas ainda mais atraentes e monetizar o seu negócio.  </p>
-      </article>
-      <article>
-        <img src="./assets/assessment.png" alt="">
-        <h3 class="purple-h3">ASSESSMENT DE REDES </h3>
-        <p>Mapeamento completo de recursos e tendências, identificação de eventuais problemas e riscos e otimização de resultados.  </p>
-      </article>    
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .features {
+      padding: auto;
+      margin: var(--global-margin);
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .features div {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .feature-icons {
+      gap: 30px;
+    }
+    .feature-icons img {
+      margin: 15px;
+    }
+
+    .features h1 {
+      color: black;
+
+      font-size: 28px;
+    }
+
+    .become-member {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .become-member h1 {
+      color: black;
+    }
+
+    .become-member button {
+      padding: 10px;
+
+      background-color: coral;
+
+    }
+
+
+    footer {
+      padding: 10px;
+      background-color: black;
+    }
+
+    footer div {
+      margin: var(--global-margin);
+    }
+
+    footer div div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      margin: 0;
+    }
+    
+    footer div div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      align-items: baseline;
+
+      text-align: center;
+    }
+    footer div div div p {
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 2px;
+    }
+    footer div div div span {
+      font-size: 29px;
+      font-weight: 800;
+      margin-top: 5px;
+    }
+  </style>
+
+
+  <header style="background-color: black; padding: 30px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin: 0 20rem 0 20rem;">
+      
+      <img src="https://facasdavila.com.br/assets/img/logop_branco.png"  alt="">
+      <button><img src="./assets/featured-button.png" alt=""></button>
     </div>
-    <button type="button">Fale Conosco</button>
-        <h4>Apoio</h4>
-        <img class="extreme-logo" src="./assets/extreme_logo.png" alt="">
+  </header>
+
+  <section class="featured">
+    <div><h1>Já pensou em entrar para a família D’Avila?</h1>
+    <h2>Leve a tradição e a qualidade das Facas D’Avila para perto de você com uma de nossas franquias </h2>
+    <button><img src="./assets/featured-button.png" alt=""></button></div>
+
   </section>
 
-</main>
+  <section class="about">
+    <div><p>A Cutelaria D’Avila nasceu há 9 anos com a missão de levar aos nossos clientes facas e acessórios cuteleiros de alta qualidade. 
+      Nascida no seio da cultura gaúcha, prioriza o apreço pela cutelaria artesanal, já que a faca é item indispensável para as pessoas que acompanham esta tradição. 
+      Hoje, o nosso objetivo é garantir a união do diferencial estético com a funcionalidade prática de uma excelente faca para a maior quantidade de pessoas que pudermos. 
+      E você pode se tornar uma grande força nesta tarefa ao se tornar um de nossos franqueados. 
+      </p></div>
+  </section>
+
+  <section class="features">
+    <div>
+      <center>
+      <img src="./assets/small-logo.png" alt="">
+    </center>
+      <h1>Ao decidir abrir uma franquia, nós te ajudamos no processo de implementação, levando algumas informações em consideração e fornecendo:</h1>
+      <center>
+      <div class="feature-icons">
+        <img src="./assets/validacao-ponto.png" alt="">
+        <img src="./assets/layout-interno.png" alt="">
+        <img src="./assets/marketing.png" alt="">
+        <img src="./assets/estrutura-redes.png" alt="">
+      </div>
+    </center>
+    </div>
+  </section>
+
+  <section class="become-member">
+    <div>
+      <h1>Tudo isso, mais um Manual Detalhado para que você esteja completamente alinhado com a cultura e os valores da Cutelaria D’Avila. </h1>
+
+      <button>Quero ser um franqueado</button>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div></div>
+  </section>
+
   <footer>
     <div>
-    <img src="./assets/seal.png" alt="">
-    <p>(11)2134.3814 | seal@seal.com.br | www.seal.com.br</p>
-    <aside>
-    <img class="media-logo" src="./assets/youtube.png" alt="">
-    <img class="media-logo" src="./assets/linkedin.png" alt="">
-    <img class="media-logo" src="./assets/fb.png" alt="">
-    <img class="media-logo" src="./assets/blog.png" alt="">
-  </aside>
-  </div>
-
+      <section>
+        <img src="./assets/Logo.png" alt="">
+      </section>
+      <div class="footer-mid">
+        <div>
+          <span>Cutelaria D'Avila</span>
+          <p>Atendimento: 51 3508 9596 </p>
+          <p>WhatsApp: 51 3508 9596 </p>
+          <p>contato@facasdavila.com.br</p>
+          <p>CNPJ: 15.443.919/0001-27</p>
+        </div>
+        <div>
+          <h1>Redes Sociais</h1>
+          <div style="flex-direction: row;">
+            <img src="./assets/whatsapp.png" alt="">
+            <img src="./assets/whatsapp.png" alt="">
+            <img src="./assets/whatsapp.png" alt="">
+            <img src="./assets/whatsapp.png" alt="">
+          </div>
+        </div>
+      </div>
+      <section> <h1>Av. Edgar Pires de Castro, 1640 - Loja 103 Bairro Aberta dos Morros - Porto Alegre / RS</h1> </section>
+    </div>
   </footer>
-  <div class="copyright">
-    <p>COPYRIGHT 2012 © - SEAL TECNOLOGIA. TODOS OS DIREITOS RESERVADOS.</p>
-  </div>
 </body>
 </html>
